@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Belajar Javascript Part 5 : Mengenal Tipe Data Pada Javascript</title>
+</head>
+<body>
+ <h1>Tipe Data Number Pada Javascript</h1>
+ <h2>www.malasngoding.com</h2>
+ 
+
+ <div id="number"></div>
+ <div id="string"></div>
+ <div id="array"></div>
+ <div id="object"></div>
+
+ <script>
+    // tipe data Number
+    var angka = 80;
+    document.getElementById("number").innerHTML = angka;
+
+    // tipe data string
+    var kalimat = "Belajar javascript dasar di malasngoding.com";
+    document.getElementById("string").innerHTML = kalimat;
+
+    // tipe data Array
+	var hewan = ["Kambing", "Bebek", "Ayam"];
+    document.getElementById("array").innerHTML = hewan[1];
+
+    // tipe data object		
+		var manusia = {
+		    nama : "malas ngoding",
+		    alamat  : "Jakarta",
+		    umur       : 30,
+		    pekerjaan  : "facebooker"
+		};
+
+		document.getElementById("object").innerHTML = manusia.nama + " tinggal di " + manusia.alamat + " .dia sekarang berumur"+ manusia.umur +" dan bekerja sebagai " + manusia.pekerjaan;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+document.getElementById("nama1").innerHTML="Nama saya Shabri - ini hasil dari import file js"

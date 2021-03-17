@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tutorial 12 - Manipulasi String</title>
+</head>
+<body>
+    <h2>www.malasngoding.com</h2>
+
+    <p id="length"></p>
+    <p id="indexof"></p>
+    <p id="search"></p>
+    <p id="slice"></p>
+    <p id="replace"></p>
+    <p id="besar"></p>
+    <p id="kecil"></p>
+    <p id="concat"></p>
+    <p id="split"></p>
+
+    <script>
+        //Menghitung Jumlah karakter pada string
+        var kalimat = "saya belajar javascript di www.malasngoding.com";
+        document.getElementById("length").innerHTML = kalimat.length;
+
+        //menemukan letak string dengan indexof
+        var kalimat1 = "Selamat datang di tutorial string javascript";
+        var temukan = kalimat1.indexOf("tutorial");
+        document.getElementById("indexof").innerHTML = temukan;
+
+        //mencari string
+        var kalimat2 = "belajar javascript di www.malasngoding.com";
+        var cari = kalimat2.search("javascript");
+        document.getElementById("search").innerHTML = cari;
+
+        //filter string dengan slice
+        var filter = kalimat2.slice(22, 42);
+        document.getElementById("slice").innerHTML = filter;
+
+        //mengganti string dengan replace
+        var ganti = kalimat2.replace('javascript', 'pemrograman');
+        document.getElementById("replace").innerHTML = ganti;
+        
+        // mengubah ke huruf kecil & mengubah ke huruf besar
+        var kalimat3 = "Belajar JAVASCRIPT di www.malasngoding.com";   
+        var a = kalimat3.toUpperCase();
+        var b = kalimat3.toLowerCase();
+        document.getElementById("besar").innerHTML = a;
+        document.getElementById("kecil").innerHTML = b;
+
+        // menggabungkan string dengan concat
+        var a = "muhammad";    
+  	    var b = "shabri";   
+  	    var gabung = a.concat(" ",b);  
+        document.getElementById("concat").innerHTML = gabung;
+        
+        // menguba string ke array dengan split
+        var huruf = "a,b,c";    
+        var convert = huruf.split(",");  
+        document.getElementById("split").innerHTML = convert[0];
+    </script>
+</body>
+</html>
